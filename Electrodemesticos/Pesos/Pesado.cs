@@ -13,6 +13,10 @@ namespace Electrodemesticos.Pesos
         {
             this.valorLetra = this.CalcularPesoPesado();
         }
+        /// <summary>
+        /// calcula el peso pesado mediante el atributo de clase static
+        /// </summary>
+        /// <returns></returns>
         public float CalcularPesoPesado()
         {
             return this.valorLetra = Pesado.VALOR_LETRA_PESADO;

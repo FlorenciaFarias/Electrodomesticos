@@ -14,6 +14,10 @@ namespace Electrodemesticos.Pesos
         {
             this.valorLetra = this.CalcularPesoLiviano();
         }
+        /// <summary>
+        /// calcula el peso liviano mediante el atributo de clase
+        /// </summary>
+        /// <returns></returns>
         public float CalcularPesoLiviano()
         {
             return this.valorLetra = Liviano.VALOR_LETRA_LIVIANO;

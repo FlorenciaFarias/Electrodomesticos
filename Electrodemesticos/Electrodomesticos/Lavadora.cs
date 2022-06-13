@@ -18,7 +18,10 @@ namespace Electrodemesticos.Electrodomesticos
             this.pesoKg = pesoKg;
             this.precioBase = precioBase;
         }
-  
+  /// <summary>
+  /// PrecioFinal() agrega valor extra por carga de peso
+  /// </summary>
+  /// <returns></returns>
         public override float PrecioFinal()
         {
         

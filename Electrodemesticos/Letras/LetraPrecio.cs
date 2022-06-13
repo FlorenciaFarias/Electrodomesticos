@@ -10,6 +10,10 @@ namespace Electrodemesticos.Letras
     {
         protected float valorLetraPrecio;
 
+        /// <summary>
+        /// calcula el valor de la letra segun el tipo
+        /// </summary>
+        /// <returns></returns>
         public float CalcularLetra()
         {
             return this.valorLetraPrecio;

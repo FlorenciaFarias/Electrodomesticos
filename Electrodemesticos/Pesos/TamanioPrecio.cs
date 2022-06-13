@@ -15,6 +15,10 @@ namespace Electrodemesticos.Pesos
         {
             this.valorLetra = CalcularPeso();
         }
+        /// <summary>
+        /// calcula el peso que recibe de sus hijos
+        /// </summary>
+        /// <returns></returns>
         public float CalcularPeso()
         {
             return this.valorLetra;

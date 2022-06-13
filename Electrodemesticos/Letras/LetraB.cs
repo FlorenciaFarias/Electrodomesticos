@@ -14,6 +14,10 @@ namespace Electrodemesticos.Letras
         {
             this.valorLetraPrecio = this.CalcularLetraB();
         }
+        /// <summary>
+        /// retorna el valor de letra B
+        /// </summary>
+        /// <returns></returns>
         public float CalcularLetraB()
         {
             return this.valorLetraPrecio = LetraB.VALOR_LETRA_B;

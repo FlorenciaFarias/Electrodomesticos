@@ -14,6 +14,10 @@ namespace Electrodemesticos.Pesos
         {
             this.valorLetra = CalcularPesoMedio();
         }
+        /// <summary>
+        /// calcula el peso medio mediante el atributo de clase
+        /// </summary>
+        /// <returns></returns>
         public float CalcularPesoMedio()
         {
             return this.valorLetra = Medio.VALOR_LETRA_MEDIO;

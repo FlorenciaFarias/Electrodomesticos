@@ -10,10 +10,18 @@ namespace Electrodemesticos.Electrodomesticos
 {
     class Electrodomestico
     {
+        /// <summary>
+        /// contiene 3 atributos, 2 por agregación
+        /// </summary>
         protected float precioBase;
         protected LetraPrecio consumoEnergetico;
         protected TamanioPrecio peso;
         
+        /// <summary>
+        /// este constructor espera peso y consumo energetico
+        /// </summary>
+        /// <param name="peso"></param>
+        /// <param name="consumoEnergetico"></param>
         public Electrodomestico(TamanioPrecio peso, LetraPrecio consumoEnergetico)
         {
             this.precioBase = 100;
@@ -26,7 +34,11 @@ namespace Electrodemesticos.Electrodomesticos
             this.peso = peso;
             this.consumoEnergetico = consumoEnergetico;
         }
-        
+        /// <summary>
+        /// calcula el peso de la clase TamanioPrecio y la letra de LetrasPrecio,
+        /// suma estos con el precio base y retorna el total del producto
+        /// </summary>
+        /// <returns></returns>
         public virtual float PrecioFinal()
         {
             float pesoTotal = this.peso.CalcularPeso();
