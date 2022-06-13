@@ -10,6 +10,11 @@ namespace Electrodemesticos.Pesos
     class TamanioPrecio
     {
         protected float valorLetra;
+
+        public TamanioPrecio()
+        {
+            this.valorLetra = CalcularPeso();
+        }
         public float CalcularPeso()
         {
             return this.valorLetra;

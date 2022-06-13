@@ -10,6 +10,10 @@ namespace Electrodemesticos.Pesos
     {
         private static float VALOR_LETRA_LIVIANO = 10;
 
+        public Liviano()
+        {
+            this.valorLetra = this.CalcularPesoLiviano();
+        }
         public float CalcularPesoLiviano()
         {
             return this.valorLetra = Liviano.VALOR_LETRA_LIVIANO;

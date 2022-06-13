@@ -8,26 +8,31 @@ using System.Threading.Tasks;
 
 namespace Electrodemesticos.Electrodomesticos
 {
-     class Electrodomestico
+    class Electrodomestico
     {
         protected float precioBase;
         protected LetraPrecio consumoEnergetico;
         protected TamanioPrecio peso;
-
+        
         public Electrodomestico(TamanioPrecio peso, LetraPrecio consumoEnergetico)
         {
             this.precioBase = 100;
             this.peso = peso;
             this.consumoEnergetico = consumoEnergetico;
         }
-
+        public Electrodomestico(float precioBase, TamanioPrecio peso, LetraPrecio consumoEnergetico)
+        {
+            this.precioBase = precioBase;
+            this.peso = peso;
+            this.consumoEnergetico = consumoEnergetico;
+        }
         
-        public float PrecioFinal()
+        public virtual float PrecioFinal()
         {
             float pesoTotal = this.peso.CalcularPeso();
             float letraValor = this.consumoEnergetico.CalcularLetra();
             float sumatoriaFinal = 0;
-            sumatoriaFinal += this.precioBase + (pesoTotal + letraValor);
+            sumatoriaFinal += this.precioBase + pesoTotal + letraValor;
             return sumatoriaFinal;
         }
     }

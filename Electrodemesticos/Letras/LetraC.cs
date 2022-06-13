@@ -10,6 +10,10 @@ namespace Electrodemesticos.Letras
         {
             private static float VALOR_LETRA_C = 60;
 
+            public LetraC()
+        {
+            this.valorLetraPrecio = this.CalcularLetraC();
+        }
             public float CalcularLetraC()
             {
                 return this.valorLetraPrecio = LetraC.VALOR_LETRA_C;
